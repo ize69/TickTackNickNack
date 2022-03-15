@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="app.js"></script>
+        <title>Receipt example</title>
+    </head>
+    <body>
+      <button id="btnPrint" class="hidden-print">Print</button>
+      <script src="script.js"></script>
+      <div class="inputFields">
+      <p>Enter the <b>@username</b> of a user who is currently live:</p>
+      <input type="text" id="uniqueIdInput">
+      <input type="button" id="connectButton" value="connect">
+      </div>
+        <div class="ticket">
+          <!--
+            <p class="centered">CHAT & GIFTS
+            <table>
+                <thead>
+                    <tr>
+                        <th class="quantity">Q.</th>
+                        <th class="description">Description</th>
+                        <th class="price">$$</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="quantity">1.00</td>
+                        <td class="description">ARDUINO UNO R3</td>
+                        <td class="price">$25.00</td>
+                    </tr>
+                </tbody>
+            </table>
+          -->
+          <table class="splitstatetable">
+        <tr>
+            <td>
+                <pre id="stateText"></pre>
+            </td>
+            <td>
+                <div id="roomStats"></div>
+            </td>
+        </tr>
+    </table>
+
+      <table class="splitchattable">
+        <tr>
+            <td>
+                <div class="chatcontainer">
+                    <h3 class="containerheader">Chats</h3>
+                </div>
+            </td>
+            <td>
+                <div class="giftcontainer">
+                    <h3 class="containerheader">Gifts</h3>
+                </div>
+            </td>
+        </tr>
+          </table>
+        </div>
+
+
+    </body>
+</html>
